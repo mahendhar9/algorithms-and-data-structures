@@ -54,12 +54,12 @@ class Node {
     if(data < this.data && this.left) {
       return this.left.contains(data);
     }
-    // If data is greater than current node's data && there is a left right, then recurse down right side
+    // If data is greater than current node's data && there is a right node, then recurse down right side
     else if(data > this.data && this.right) {
       return this.right.contains(data);
     }
 
-    return null; // no node in the tree has given data
+    return null; // no node in the tree contains given data
   }
 }
 
